@@ -22,4 +22,4 @@ TBD if Zenodo or Open Science Framework.
 
 For specific questions related to the code, please raise an issue or contact:
 <br>
-[Jacob Ulirsch](julirsch@illumina.com), [Layla Siraj](sirajl@broadinstitute.org), or [Ryan Tewhey](Ryan.Tewhey@jax.org).
+[Jacob Ulirsch](julirsch@illumina.com), [Layla Siraj](sirajl@broadinstitute.org), or [Ryan Tewhey](Ryan.Tewhey@jax.org)
