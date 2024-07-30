@@ -18,7 +18,7 @@ TBD if Zenodo or Open Science Framework.
 
 
 
-# Contact
+## Contact
 
 For specific questions related to the code, please raise an issue or contact:
 <br>
