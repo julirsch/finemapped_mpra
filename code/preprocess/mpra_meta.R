@@ -33,5 +33,3 @@ mpra_meta_df <- mpra_df %>%
 mpra_meta_df %>%
   vroom_write("data/preprocess/mpra_meta.txt.gz")
 
-
-                emVar_meta = ifelse(active_meta & lof2Skew_meta_padj >= -log10(0.1) & !is.na(lof2Skew_meta_padj) & abs(log2Skew_meta) >= 0, T, F))
