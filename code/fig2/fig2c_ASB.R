@@ -21,7 +21,6 @@ mpra_df <- mpra_df %>%
             by = c("variant", "cohort")) %>%
   ungroup() 
 
-
 # Read in DHS allelic imbalance 
 cnames <- c("chromosome",	"start",	"end",	"ID",	"ref",	"alt",	
             "AAF",	"RAF",	"FMR",	"mean_BAD",	"footprints_n",	"hotspots_n",	
@@ -54,7 +53,7 @@ out_df <- mpra_df %>%
               dplyr::select(variant, caAI_fdr, caAI_es, caAI_thresh),
             by = "variant")
 
-# Filter to fine-mapped variants
+# Filter to non-coding, fine-mapped variants
 out_df <- out_df %>% 
   dplyr::filter(cs_id > 0, cohort %in% c("UKBB", "GTEx", "BBJ"),
                 consequence2 %ni% c("LoF", "missense", "synonymous")) %>%
@@ -67,7 +66,7 @@ out_df %>%
   dplyr::group_by(caAI_thresh, emVar_any) %>%
   dplyr::summarize(n = length(variant),
                    cor = Hmisc::rcorr(log2Skew_meta, caAI_es, type = "pearson")$r[2],
-                   pval = Hmisc::rcorr(log2Skew_meta, caAI_es, type = "pearson")$P[2])
+                   pval = cor.test(log2Skew_meta, caAI_es, type = "pearson")$p.value)
 
 # Plot correlation (Fig. 2c)
 p1 <- out_df %>%
