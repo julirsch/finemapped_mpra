@@ -61,7 +61,7 @@ p1 <- ggplot(data = out, aes(x = recall, y = precision, color = annot, shape = c
 
 # Save plot (Fig. 2e)
 plt_combined <- p1 + plot_layout(nrow = 1, heights = c(6))
-cowplot::save_plot('figures/fig2/fig2e.pdf',
+cowplot::save_plot('figures/fig2/fig2e_prc.pdf',
                    plt_combined,
                    base_height = 6,
                    base_width = 6,
