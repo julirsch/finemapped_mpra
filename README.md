@@ -24,4 +24,4 @@ https://docs.google.com/document/d/1NAE025MAveE-AVeAEHLe9P-9yWTwXLrNyBb3qgfyQ_8/
 
 For specific questions related to the code, please raise an issue or contact:
 <br>
-[Jacob Ulirsch](julirsch@illumina.com), [Layla Siraj](sirajl@broadinstitute.org), or [Ryan Tewhey](Ryan.Tewhey@jax.org)
+[Jacob Ulirsch](mailto:julirsch@illumina.com), [Layla Siraj](mailto:sirajl@broadinstitute.org), or [Ryan Tewhey](mailto:Ryan.Tewhey@jax.org)
