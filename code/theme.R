@@ -13,3 +13,13 @@ plot_theme <-
     legend.background = element_blank(),
     legend.key.size = unit(0.2, "cm")
   )
+ 
+# Cell type colors
+ct_colors <- c(
+  pnw_palette('Bay',8,type='continuous')[5],
+  pnw_palette('Bay',8,type='continuous')[3],
+  pnw_palette('Starfish')[5],
+  pnw_palette('Bay',8,type='continuous')[2],
+  pnw_palette('Bay',8,type='continuous')[8]
+)
+names(ct_colors) <- c("A549", "HCT116", "HEPG2", "K562", "SKNSH")
