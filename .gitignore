@@ -1,5 +1,6 @@
 # Data files
 data/
+resources/
 
 # History files
 .Rhistory
