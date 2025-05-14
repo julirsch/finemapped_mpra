@@ -1,6 +1,6 @@
 # Functional dissection of complex and molecular trait variants at single cell resolution
 
-Updated: July 29, 2024 *(To be completed by August 12th, 2024)*
+Updated: May 13th, 2025
 
 ## About
 
