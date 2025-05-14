@@ -22,10 +22,10 @@ mpra_df <- mpra_df %>%
   ungroup() 
 
 # Read in DHS allelic imbalance 
-cnames <- c("chromosome",	"start",	"end",	"ID",	"ref",	"alt",	
-            "AAF",	"RAF",	"FMR",	"mean_BAD",	"footprints_n",	"hotspots_n",	
-            "logit_pval_ref",	"logit_pval_alt",	"es_mean",	"es_weighted_mean",	"nSNPs",	"max_cover",	
-            "fdrp_bh_ref",	"fdrp_bh_alt",	"min_fdr")
+cnames <- c("chromosome", "start", "end", "ID", "ref", "alt",	
+            "AAF", "RAF", "mean_BAD", "nSNPs", "max_cover",	"mean_cover", 
+            "footprints_n",	"hotspots_n",	"group_id",	"pval_ref_combined",	"pval_alt_combined",	
+            "es_combined", "logit_es_combined",	"min_pval",	"min_fdr")
 dhs_asb_gr <- vroom("data/asb/all.aggregation.dnase.bed.gz", delim = "\t", col_names = cnames, skip = 1) %>%
   makeGRangesFromDataFrame(., 
                            seqnames.field = "chromosome", 
@@ -49,7 +49,7 @@ out_df <- mpra_df %>%
   left_join(dhs_asb_df %>%
               #dplyr::filter(nSNPs > 10, max_cover > 100) %>%
               dplyr::filter(nSNPs > 20) %>%
-              dplyr::mutate(caAI_fdr = min_fdr, caAI_es = -1 * es_weighted_mean, caAI_thresh = ifelse(caAI_fdr < 0.25, T, F)) %>%
+              dplyr::mutate(caAI_fdr = min_fdr, caAI_es = -1 * logit_es_combined, caAI_thresh = ifelse(caAI_fdr < 0.25, T, F)) %>%
               dplyr::select(variant, caAI_fdr, caAI_es, caAI_thresh),
             by = "variant")
 
@@ -60,6 +60,11 @@ out_df <- out_df %>%
   dplyr::select(variant, emVar_meta, emVar_any, log2Skew_meta, caAI_es, caAI_fdr, caAI_thresh) %>%
   distinct() %>% 
   na.omit()
+
+# Write out variants used in analysis
+out_df %>%
+  distinct(variant) %>%
+  data.table::fwrite("data/asb/all.aggregation.dnase.variants.txt", sep = "\t", col.names = T)
 
 # Correlations between allelic imbalance and MPRA allelic effect
 out_df %>%
@@ -82,6 +87,7 @@ p1 <- out_df %>%
   coord_cartesian(xlim = c(-2.1, 2.1), ylim = c(-2.5, 2.5)) +
   plot_theme +
   theme(legend.position = "none")
+p1
 
 # Save plot (Fig. 2c)
 plt_combined <- p1 + plot_layout(nrow = 1, heights = c(2))

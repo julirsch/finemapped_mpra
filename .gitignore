@@ -1,6 +1,8 @@
 # Data files
 data/
 resources/
+tables/
+old_code/
 
 # History files
 .Rhistory

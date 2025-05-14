@@ -78,3 +78,7 @@ GRsize <- function(gr, shift = 250) {
   return(gr)
 }
 
+# Define PIP bin breaks
+pip_bin_breaks <- c(0, 0.01, 0.1, 0.5, 0.9, 1.0)
+
+

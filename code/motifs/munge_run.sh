@@ -1,0 +1,50 @@
+# Run Hocomoco
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 1
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 2
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 3
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 4
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 5
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 6
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 7
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 8
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 9
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 10
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 11
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 12
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 13
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 14
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 15
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 16
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 17
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 18
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 19
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 20
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 21
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco 22
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R hocomoco X
+
+# Run Jaspar
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 1
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 2
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 3
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 4
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 5
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 6
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 7
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 8
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 9
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 10
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 11
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 12
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 13
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 14
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 15
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 16
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 17
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 18
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 19
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 20
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 21
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar 22
+Rscript --vanilla /mnt/sdb/gwas_eqtl_mpra/code/tables/process_fimo.R jaspar X
+

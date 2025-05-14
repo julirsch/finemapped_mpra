@@ -83,7 +83,7 @@ p1 <- out_df %>%
 # Save plot (Fig. 1d)
 plt_combined <- p1 + plot_layout(nrow = 1, heights = c(2))
 cowplot::save_plot(
-  paste0("figures/fig1/fig1c_dhscorr.pdf"),
+  paste0("figures/fig1/fig1d_dhscorr.pdf"),
   plt_combined,
   base_height = 2,
   base_width = 2,
